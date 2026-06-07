@@ -42,7 +42,7 @@ jobs:
       - name: Compress and Package Production Build Directory Elements
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Scans and packages the entire root workspace setup
+          path: './Videos' # Scans and packages the entire root workspace setup
           
       # Step 4: Stream and launch the production package straight live onto the global edge delivery servers
       - name: Broadcast and Live Host Static Assets onto Pages Networks
